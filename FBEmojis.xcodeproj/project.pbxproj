@@ -11,7 +11,6 @@
 		5D56F65C25CEBE30003E3F70 /* FBEmojisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56F65B25CEBE30003E3F70 /* FBEmojisTests.swift */; };
 		5D56F65E25CEBE31003E3F70 /* FBEmojis.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D56F65025CEBE30003E3F70 /* FBEmojis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D56F66E25CEBF9F003E3F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56F66D25CEBF9F003E3F70 /* AppDelegate.swift */; };
-		5D56F67025CEBF9F003E3F70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56F66F25CEBF9F003E3F70 /* SceneDelegate.swift */; };
 		5D56F67225CEBF9F003E3F70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56F67125CEBF9F003E3F70 /* ViewController.swift */; };
 		5D56F67525CEBF9F003E3F70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D56F67325CEBF9F003E3F70 /* Main.storyboard */; };
 		5D56F67725CEBFA8003E3F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D56F67625CEBFA8003E3F70 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 		5D56F65D25CEBE30003E3F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D56F66B25CEBF9F003E3F70 /* FBEmojisExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBEmojisExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D56F66D25CEBF9F003E3F70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D56F66F25CEBF9F003E3F70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D56F67125CEBF9F003E3F70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D56F67425CEBF9F003E3F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D56F67625CEBFA8003E3F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				5D56F66D25CEBF9F003E3F70 /* AppDelegate.swift */,
-				5D56F66F25CEBF9F003E3F70 /* SceneDelegate.swift */,
 				5D56F67125CEBF9F003E3F70 /* ViewController.swift */,
 				5D56F67325CEBF9F003E3F70 /* Main.storyboard */,
 				5D56F67625CEBFA8003E3F70 /* Assets.xcassets */,
@@ -201,6 +198,7 @@
 				TargetAttributes = {
 					5D56F64C25CEBE30003E3F70 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					5D56F65525CEBE30003E3F70 = {
 						CreatedOnToolsVersion = 12.0;
@@ -279,7 +277,6 @@
 			files = (
 				5D56F67225CEBF9F003E3F70 /* ViewController.swift in Sources */,
 				5D56F66E25CEBF9F003E3F70 /* AppDelegate.swift in Sources */,
-				5D56F67025CEBF9F003E3F70 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +435,7 @@
 		5D56F66225CEBE31003E3F70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -454,6 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +461,7 @@
 		5D56F66325CEBE31003E3F70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
