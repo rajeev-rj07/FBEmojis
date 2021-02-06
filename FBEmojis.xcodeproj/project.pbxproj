@@ -15,6 +15,7 @@
 		5D56F67525CEBF9F003E3F70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D56F67325CEBF9F003E3F70 /* Main.storyboard */; };
 		5D56F67725CEBFA8003E3F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D56F67625CEBFA8003E3F70 /* Assets.xcassets */; };
 		5D56F67A25CEBFA8003E3F70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D56F67825CEBFA8003E3F70 /* LaunchScreen.storyboard */; };
+		5D56F68225CECCE9003E3F70 /* FBEmojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56F68125CECCE9003E3F70 /* FBEmojis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5D56F67625CEBFA8003E3F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D56F67925CEBFA8003E3F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D56F67B25CEBFA8003E3F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D56F68125CECCE9003E3F70 /* FBEmojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBEmojis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				5D56F65025CEBE30003E3F70 /* FBEmojis.h */,
 				5D56F65125CEBE30003E3F70 /* Info.plist */,
+				5D56F68125CECCE9003E3F70 /* FBEmojis.swift */,
 			);
 			path = FBEmojis;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D56F68225CECCE9003E3F70 /* FBEmojis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +490,7 @@
 		5D56F66525CEBE31003E3F70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FBEmojisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -503,6 +508,7 @@
 		5D56F66625CEBE31003E3F70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FBEmojisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
